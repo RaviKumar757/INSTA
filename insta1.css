@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Main layout */
+#main{
+    display: flex;
+}
+
+/* Sidebar */
+#sidebar{
+    background-color: aqua;
+    height: 100vh;
+    width: 20%;
+    padding: 15px;
+}
+
+/* Sidebar list */
+#sidebarimage {
+    list-style: none;
+}
+
+/* Sidebar items */
+#sidebarimage li {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Hover */
+#sidebarimage li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+/* Sidebar icons */
+#sidebarimage img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Main content */
+#main-scrollable-container{
+    background-color: white;
+    width: 80%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Stories container */
+#stories_section{
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+/* Each story */
+.story{
+    text-align: center;
+    min-width: 70px;
+    cursor: pointer;
+}
+
+/* Story image */
+.story img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    padding: 3px;
+    object-fit: cover;
+
+    /* Instagram gradient border */
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.story img:hover{
+    transform: scale(1.1);
+}
+
+/* Username */
+.story p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+/*footer section*/
+footer{
+    background-color: #10be28;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid rgb(12, 11, 11); /* ❌ solis → ✅ solid */
+}
+
+/* User profile */
+#user_profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Left section */
+#user_profile_left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Profile image */
+#user_profile_left img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Username */
+#user_profile_left h4{
+    font-size: 14px;
+    color: #000;
+}
+
+/* Sub text */
+#user_profile_left p{
+    font-size: 12px;
+    color: #bebebe;  /* ❌ wrong color fixed */
+}
+
+/* Switch button */
+#user_profile a{
+    color: #0095f6;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Footer */
+footer{
+    width: 300px;
+    padding: 15px;
+    background-color: white;
+    border: 1px,solid,black;
+    position: absolute;
+    top: 51px;
+    right: 46px;
+    border: none;
+    
+}
+
+/* User profile */
+#user_profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#user_profile_left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#user_profile_left img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#user_profile_left h4{
+    font-size: 14px;
+}
+
+#user_profile_left p{
+    font-size: 12px;
+    color: #141414;
+}
+
+#user_profile a{
+    color: #0d141a;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Suggestions header */
+#footer_suggestions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#footer_suggestions h5{
+    color: #8a1b1b;
+    font-size: 13px;
+}
+
+#footer_suggestions a{
+    color: #0d1114;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Suggestions list */
+#user_suggestions{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Each suggestion */
+.suggestion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left side */
+.suggestion_left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.suggestion_left img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.suggestion_left h4{
+    font-size: 13px;
+}
+
+.suggestion_left p{
+    font-size: 11px;
+    color: #270505;
+}
+
+/* Follow button */
+.suggestion a{
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/*folow amimation*/
+.suggestion a{
+    color: #1d1e1f;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.suggestion a:hover{
+    transform: scale(1.1);   /* 👈 zoom effect */
+    color: #00376b;
+}
+
+
+
+
+.suggestion{
+    padding: 6px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.suggestion:hover{
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.suggestion_left img{
+    transition: 0.3s;
+}
+
+.suggestion_left img:hover{
+    transform: scale(1.1);
+}
+
+.suggestion_left h4:hover{
+    text-decoration: underline;
+}
+/*post section*/
+./* Center the post in main area */
+.post {
+  width: 400px;
+  margin: 20px auto;   /* center horizontally */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  overflow: hidden;    /* prevents overflow */
+}
+
+/* Header */
+.post_header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.user_image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post_header p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.post_header img[alt="tick"] {
+  width: 16px;
+  height: 16px;
+}
+
+.follow_btn {
+  margin-left: auto;
+  color: #0095f6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 🔥 FIXED IMAGE SECTION */
+.post_images {
+  width: 100%;
+}
+
+.post_images img {
+  width: 60%;
+  aspect-ratio: 1 / 1;   /* perfect square */
+  object-fit: cover;
+  display: block;
+}
